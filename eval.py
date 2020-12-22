@@ -3,8 +3,7 @@ import sys
 import h5py
 import numpy as np
 
-clean_data_filename = str(sys.argv[1])
-model_filename = str(sys.argv[2])
+
 
 def data_loader(filepath):
     data = h5py.File(filepath, 'r')
@@ -28,4 +27,6 @@ def main():
     print('Classification accuracy:', class_accu)
 
 if __name__ == '__main__':
+    clean_data_filename = str(sys.argv[1])
+    model_filename = str(sys.argv[2])
     main()
