@@ -55,7 +55,7 @@ else:
     if not (label_retrain == label_origin and
             pred_origin[label_retrain] - pred_retrain[label_retrain] <= 0.5):
         print('\n')
-        print(label_origin)
+        print(1283)
     else:
         print('\n')
-        print(1283)
+        print(label_retrain)
