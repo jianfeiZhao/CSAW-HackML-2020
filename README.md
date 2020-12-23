@@ -12,7 +12,8 @@ execute `eval_repaired.py` by running:
 where model name is chosen from `[sunglasses, multi_trigger_multi_target, anonymous_2, anonymous_1]`, 
 and data is either a image file or a `.h5` dataset.  
 E.g. `python3 eval_repaired.py multi_trigger_multi_target data/demo.jpeg`  
-and `python3 eval_repaired.py sunglasses data/data.h5`
+and `python3 eval_repaired.py sunglasses data/data.h5`.
+There is also an evaluation file `evalRepair.ipynb` which you can use to evaluate our repaired model in Google Colab.
 2. If a image file is given, the script will output the label predicted (1283 for poisoned images, \[0, 1282\] for clean images). 
 If a dataset is given, the script will output accuracy of repaired model's prediction, 
 and number of poisoned images detected in the dataset. 
